@@ -1,8 +1,56 @@
-<html>
-  <head>
-    <tittle>MaoEr</tittle>
-  </head>
-  <body>
-    <h1>MaoEr 的 Github 主页。</h1>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaoEr</title>
+</head>
+
+<body>
+    <section>
+        <h2>MaoEr</h2>
+        <div class="light"></div>
+    </section>
+</body>
+
 </html>
+
+<script>
+    const pos = document.documentElement
+    pos.addEventListener('mousemove', e => {
+        pos.style.setProperty('--x', e.clientX + 'px')
+        pos.style.setProperty('--y', e.clientY + 'px')
+    })
+</script>
+
+<style>
+    body {
+        margin: 0px;
+    }
+
+    section {
+        position: relative;
+        min-height: 100vh;
+        background: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section h2 {
+        color: #fff;
+        font-size: 15em;
+        cursor: default;
+    }
+
+    .light {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        background: radial-gradient(circle at var(--x) var(--y), transparent 10%, rgba(0, 0, 0, 1) 20%);
+    }
+</style>
