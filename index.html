@@ -1,62 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MaoEr</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZevixQuatol</title>
+  <script type="module" crossorigin src="/assets/index-COomlgTZ.js"></script>
 </head>
 
 <body>
-    <section>
-        <h2>MaoEr</h2>
-        <div class="light"></div>
-    </section>
+  <div id="app"></div>
 </body>
 
 </html>
-
-<script>
-    const pos = document.documentElement
-    pos.style.setProperty('--x', 50 + '%')
-    pos.style.setProperty('--y', 50 + '%')
-    pos.style.setProperty('--tran', 0 + '%')
-    pos.style.setProperty('--blur', 0 + '%')
-    pos.addEventListener('mousemove', e => {
-        pos.style.setProperty('--x', e.clientX + 'px')
-        pos.style.setProperty('--y', e.clientY + 'px')
-        pos.style.setProperty('--tran', 10 + '%')
-        pos.style.setProperty('--blur', 20 + '%')
-    })
-</script>
-
-<style>
-    body {
-        margin: 0px;
-    }
-
-    section {
-        position: relative;
-        min-height: 100vh;
-        background: #000;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    section h2 {
-        color: #fff;
-        font-size: 15em;
-        cursor: default;
-    }
-
-    .light {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        pointer-events: none;
-        background: radial-gradient(circle at var(--x) var(--y), transparent var(--tran), rgba(0, 0, 0, 1) var(--blur));
-    }
-</style>
