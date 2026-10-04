@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1254 1254" width="1254" height="1254">
+  <!-- Transparent background by design -->
+  <g fill="#4DBF5C">
+    <!-- chip pins -->
+    <rect x="463" y="80" width="90" height="190" rx="45"/>
+    <rect x="699" y="80" width="90" height="190" rx="45"/>
+    <rect x="463" y="984" width="90" height="190" rx="45"/>
+    <rect x="699" y="984" width="90" height="190" rx="45"/>
+
+    <rect x="79" y="463" width="190" height="90" rx="45"/>
+    <rect x="79" y="696" width="190" height="90" rx="45"/>
+    <rect x="985" y="463" width="190" height="90" rx="45"/>
+    <rect x="985" y="696" width="190" height="90" rx="45"/>
+
+    <!-- outer chip frame -->
+    <path fill-rule="evenodd" d="
+      M 408 218
+      H 846
+      C 953 218 1039 305 1039 412
+      V 842
+      C 1039 950 953 1030 846 1030
+      H 408
+      C 301 1030 214 950 214 842
+      V 412
+      C 214 305 301 218 408 218
+      Z
+
+      M 408 287
+      C 340 287 283 344 283 412
+      V 842
+      C 283 910 340 961 408 961
+      H 846
+      C 914 961 970 910 970 842
+      V 412
+      C 970 344 914 287 846 287
+      Z"/>
+
+    <!-- fully filled inner rounded square -->
+    <rect x="326" y="330" width="602" height="590" rx="101"/>
+  </g>
+</svg>
